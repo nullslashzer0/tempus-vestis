@@ -11,6 +11,7 @@ python-dotenv = "*"
 tempus-vestis = {file = ".", editable = true}
 
 [dev-packages]
+pytest = "*"
 
 [requires]
 python_version = "3.11"
