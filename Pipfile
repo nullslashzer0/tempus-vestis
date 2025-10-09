@@ -6,7 +6,9 @@ name = "pypi"
 [packages]
 langchain = "*"
 langchain-openai = "*"
+langchain-core = "*"
 python-dotenv = "*"
+tempus-vestis = {file = ".", editable = true}
 
 [dev-packages]
 
