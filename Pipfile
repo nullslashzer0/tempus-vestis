@@ -4,11 +4,15 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-langchain = "*"
-langchain-openai = "*"
 langchain-core = "*"
 python-dotenv = "*"
+requests = "*"
 tempus-vestis = {file = ".", editable = true}
+langchain-openai = "*"
+langchain = "*"
+langchain-community = "*"
+faiss-cpu = "*"
+ipdb = "*"
 
 [dev-packages]
 pytest = "*"
