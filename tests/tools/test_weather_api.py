@@ -1,5 +1,5 @@
 import pytest
-from unittest.mock import patch, Mock, MagicMock
+from unittest.mock import patch, Mock
 from tools.weather_api import get_weather_forecast, _get_forecast_url, _get_summary
 from tools.constants import NWS_BASE_URL
 
