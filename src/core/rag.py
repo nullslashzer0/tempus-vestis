@@ -145,7 +145,7 @@ Provide a detailed, practical packing list and wardrobe recommendations based on
         weather_info = input_data["weather_info"]
         
         # Get relevant documents
-        docs = retriever.get_relevant_documents(query)
+        docs = retriever.invoke(query)
         context = format_docs(docs)
         
         return {
@@ -263,5 +263,5 @@ class WardrobeRAG:
             List of relevant documents
         """
         retriever = self.vectorstore.as_retriever(search_kwargs={"k": k})
-        return retriever.get_relevant_documents(query)
+        return retriever.invoke(query)
 
