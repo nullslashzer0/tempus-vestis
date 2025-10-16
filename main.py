@@ -8,9 +8,7 @@ using a sequential chain approach.
 import os
 import sys
 from dotenv import load_dotenv
-from typing import Dict, Any
 
-from core.constants import APP_NAME
 from core.agent import WardrobeAgent
 from core.rag import WardrobeRAG
 

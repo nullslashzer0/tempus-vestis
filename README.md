@@ -62,11 +62,12 @@ TempusVestis uses a "Tool-First" approach with three key components:
 
    Create a `.env` file in the project root:
 
-   ```
+   ```text
    OPENAI_API_KEY=your_openai_api_key_here
    ```
 
 4. **Run the application**
+
    ```bash
    python main.py
    ```
@@ -118,35 +119,6 @@ Run with coverage:
 pytest --cov=src tests/
 ```
 
-## 📋 Project Structure
-
-```
-tempus-vestis/
-├── src/
-│   ├── core/
-│   │   ├── agent.py          # Agent executor implementation
-│   │   ├── prompts.py        # System prompts and personas
-│   │   ├── rag.py            # RAG system for wardrobe knowledge
-│   │   └── constants.py      # Application constants
-│   └── tools/
-│       ├── date_ops.py       # Date calculation tools
-│       ├── weather_api.py    # Weather API integration
-│       └── constants.py      # Tool constants
-├── data/
-│   └── wardrobe_rules.txt    # Wardrobe knowledge base
-├── tests/
-│   └── tools/
-│       ├── test_date_ops.py
-│       └── test_weather_api.py
-├── notebooks/
-│   └── 02_agent_prototype.ipynb  # Agent testing and exploration
-├── docs/
-│   └── DEVELOPMENT_PLAN.md   # Detailed development plan
-├── main.py                   # CLI application entry point
-├── Pipfile                   # Dependencies
-└── README.md                 # This file
-```
-
 ## 🔧 Technical Details
 
 ### Tools
@@ -157,7 +129,7 @@ tempus-vestis/
 
 ### Agent Flow
 
-```
+```text
 User Query → Agent Executor → Tool Selection → Weather Retrieval → RAG Chain → Final Recommendation
 ```
 
@@ -211,4 +183,4 @@ For questions or feedback, please reach out via GitHub issues.
 
 ---
 
-_Built with ❤️ using LangChain, OpenAI, and Python_
+## _Built with ❤️ using LangChain, OpenAI, and Python_
